@@ -2,8 +2,8 @@ FROM eclipse-temurin:21
 
 WORKDIR /usr/app
 
-COPY target/docpro45.jar docpro45.jar
+COPY target/docker_project.jar app.jar
 
 EXPOSE 8080
 
-ENTRYPOINT ["java", "-jar", "docpro45.jar"]
+ENTRYPOINT ["java", "-jar", "app.jar"]
